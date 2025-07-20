@@ -33,7 +33,7 @@ export const cursos = [
   { id: "19", nombre: "Fisiología Celular", semestre: 3, creditos: 4, requisitos: ["12", "10", "1"] },
   { id: "20", nombre: "Investigación Farm.", semestre: 3, creditos: 4, requisitos: ["13", "14"] },
   { id: "21", nombre: "Inglés III", semestre: 3, creditos: 3, requisitos: ["14"] },
-  { id: "22", nombre: "Formación General ", semestre: 3, creditos: 6, requisitos: [] },
+  { id: "22", nombre: "Formación General ", semestre: 3, creditos: 2, requisitos: [] },
 
   // --- Semestre 4
   { id: "23", nombre: "Química Orgánica II", semestre: 4, creditos: 5, requisitos: ["15"] },

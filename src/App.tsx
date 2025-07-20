@@ -165,9 +165,7 @@ const App = () => {
                                 : 'bg-pink-100 text-pink-800 hover:bg-pink-200 hover:scale-105'
                               : modoOscuro
                                 ? 'bg-[#f3e8fb] text-[#a58cb0] cursor-not-allowed'
-                                : 'bg-pink-50 text-pink-300 cursor-not-allowed'}
-                            
-                            
+                                : 'bg-pink-50 text-pink-300 cursor-not-allowed'}      
                             
                           `}
                           disabled={!desbloqueado && !aprobado}
@@ -184,18 +182,13 @@ const App = () => {
                             Créditos: {curso.creditos}
                           </div>
 
-
                           {/* Emoji al aprobar */}
                           
                             {aprobado && (
                               <span className="absolute top-1 right-1 text-white text-lg animate-fadeIn">✨</span>
                             )}
                             
-                          
-
                       </button>
-
-
                       {/* Tooltip visual bonito */}
                       {!desbloqueado && !aprobado && curso.requisitos.length > 0 && (
                         <div className={`absolute -top-20 left-1/2 -translate-x-1/2 w-64 rounded-md shadow-lg px-3 py-2 z-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none ${
@@ -203,7 +196,6 @@ const App = () => {
                             ? "bg-[#f5e8ff] border border-[#e0cfff] text-[#4b3a60]"
                             : "bg-white border border-pink-300 text-pink-800"
                         }`}>
-                        
                         
                           Debes aprobar:
                           <ul className="list-disc list-inside mt-1">
@@ -215,17 +207,12 @@ const App = () => {
                         </div>
                       )}
                     </div>
-
-
                     );
                   })}
                 </div>
               );
             })}
           </div>
-
-
-          
         </div>
       </div>
     </div>
@@ -233,3 +220,4 @@ const App = () => {
 };
 
 export default App;
+
