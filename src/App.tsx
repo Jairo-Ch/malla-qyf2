@@ -104,16 +104,17 @@ const App = () => {
           {/* Fila de Años */}
           <div className="grid grid-cols-11 gap-1 mb-0.5">
             {[
-              { año: "Año 1", colSpan: 2 },
-              { año: "Año 2", colSpan: 2 },
-              { año: "Año 3", colSpan: 2 },
-              { año: "Año 4", colSpan: 2 },
-              { año: "Año 5", colSpan: 2 },
-              { año: "Año 5 1/2", colSpan: 1 }
-            ].map(({ año, colSpan }, index) => (
+              { año: "Año 1", span: 2 },
+              { año: "Año 2", span: 2 },
+              { año: "Año 3", span: 2 },
+              { año: "Año 4", span: 2 },
+              { año: "Año 5", span: 2 },
+              { año: "Año 5 1/2", span: 1 }
+            ].map(({ año, span }, index) => (
               <div
                 key={index}
-                className={`col-span-${colSpan} text-center font-bold py-2 rounded-md text-sm ${
+                style={{ gridColumn: `span ${span} / span ${span}` }}
+                className={`text-center font-bold py-2 rounded-md text-sm ${
                   modoOscuro ? "bg-purple-700 text-white" : "bg-pink-300 text-white"
                 }`}
               >
@@ -121,6 +122,7 @@ const App = () => {
               </div>
             ))}
           </div>
+
 
 
           {/* Fila de Semestres */}
